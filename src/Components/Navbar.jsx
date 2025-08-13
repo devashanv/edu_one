@@ -79,29 +79,13 @@ const Navbar = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-            .75/
           </button>
         </div>
       </nav>
+
+      <section>
+         test section
+      </section>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
