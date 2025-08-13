@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
-import image3 from '../assets/image3.jpg';
-import image4 from '../assets/image4.jpg';
-import image5 from '../assets/image5.jpg';
-import image6 from '../assets/image6.jpg';
-import image7 from '../assets/image7.jpg';
+import React, { useState, useEffect } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.jpg";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpg";
+import image5 from "../assets/image5.jpg";
+import image6 from "../assets/image6.jpg";
+import image7 from "../assets/image7.jpg";
 
 const SearchWithSlider = () => {
   const slides = [
@@ -16,7 +16,7 @@ const SearchWithSlider = () => {
     { url: image4 },
     { url: image5 },
     { url: image6 },
-    { url: image7 }
+    { url: image7 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,21 +69,21 @@ const SearchWithSlider = () => {
       </div>
 
       <div className="w-full overflow-hidden pt-24 pb-8 ">
-        <div 
+        <div
           className="flex transition-transform duration-500 ease-in-out pt-9"
-          style={{ 
+          style={{
             transform: `translateX(-${currentIndex * 25}%)`,
-            width: `${slides.length * 25}%`
+            width: `${slides.length * 25}%`,
           }}
         >
           {slides.map((slide, index) => (
             <div key={index} className="w-1/7 flex-shrink-0 px-2">
-              <div 
+              <div
                 className="w-80 h-80 bg-cover bg-center rounded-xl shadow-lg"
-                style={{ 
+                style={{
                   backgroundImage: `url(${slide.url})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center'
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
             </div>

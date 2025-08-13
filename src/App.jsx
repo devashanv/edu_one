@@ -3,6 +3,9 @@ import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import Search from "./Components/Search";
 import Footer from "./Components/Footer";
+import CardSection from "./Components/CardSection";
+import WhyEduOne from "./Components/WhyEduOne";
+import ProfileSection from "./Components/ProfileSection";
 
 function App() {
   return (
@@ -12,7 +15,7 @@ function App() {
           className="absolute inset-0"
           style={{
             backgroundImage: `
-              linear-gradient(to bottom, transparent 70%, white 100%),
+              linear-gradient(to bottom, transparent 60%, white 100%),
               linear-gradient(to right, #7dd3fc 10%, white 30%, white 70%, #7dd3fc 100%)
             `,
             backgroundBlendMode: 'multiply',
@@ -24,7 +27,11 @@ function App() {
         </div>
       </div>
       <Search />
+      <CardSection/>
+      <WhyEduOne/>
+      <ProfileSection/>
       <Footer/>
+
     </div>
   );
 }
