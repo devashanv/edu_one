@@ -1,49 +1,547 @@
 import React, { useState } from "react";
 import { Star, ArrowUpRight } from "lucide-react";
-import CategoryIcon from "../assets/c1.svg";
+import { Link } from "react-router-dom";
+
+import devIcon from "../assets/c1.svg";
+import uiuxIcon from "../assets/u.svg";
+import mgmtIcon from "../assets/mt.svg";
+import langIcon from "../assets/l.svg";
+import hrIcon from "../assets/a.svg";
+import marketingIcon from "../assets/mk.svg";
 import reactLogo from "../assets/react.svg";
 
 const categories = [
-  "Developing",
-  "UI/UX Design",
-  "Management",
-  "Languages",
-  "Accounting",
-  "Human Resource",
-  "Marketing"
+  { name: "Developing", icon: devIcon },
+  { name: "UI/UX Design", icon: uiuxIcon },
+  { name: "Management", icon: mgmtIcon },
+  { name: "Languages", icon: langIcon },
+  { name: "Accounting", icon: mgmtIcon },
+  { name: "Human Resource", icon: hrIcon },
+  { name: "Marketing", icon: marketingIcon },
 ];
 
 const courses = {
   Developing: [
-    { id: 1, img: reactLogo, title: "React Basics", level: "Beginner", rating: "4.8", reviews: "(6)", tags: ["React", "JS"] },
-    { id: 2, img: reactLogo, title: "Advanced React", level: "Advanced", rating: "4.9", reviews: "(10)", tags: ["Hooks", "Context"] },
-    { id: 3, img: reactLogo, title: "JavaScript Mastery", level: "Intermediate", rating: "4.7", reviews: "(8)", tags: ["JS", "ES6"] },
-    { id: 4, img: reactLogo, title: "Next.js Pro", level: "Advanced", rating: "4.9", reviews: "(7)", tags: ["Next.js", "SSR"] },
-    { id: 5, img: reactLogo, title: "Frontend Basics", level: "Beginner", rating: "4.6", reviews: "(5)", tags: ["HTML", "CSS"] },
-    { id: 6, img: reactLogo, title: "TypeScript Crash", level: "Intermediate", rating: "4.8", reviews: "(6)", tags: ["TS", "React"] },
-    { id: 7, img: reactLogo, title: "Node.js API", level: "Intermediate", rating: "4.8", reviews: "(6)", tags: ["Node", "API"] },
-    { id: 8, img: reactLogo, title: "Fullstack Pro", level: "Advanced", rating: "5.0", reviews: "(12)", tags: ["React", "Node"] }
+    {
+      id: 1,
+      img: reactLogo,
+      title: "React Basics",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Advanced React",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "JavaScript Mastery",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Next.js Pro",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: "React Basics",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Advanced React",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "JavaScript Mastery",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Next.js Pro",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
   ],
- UIUXDesign: [
-    { id: 1, img: reactLogo, title: "UI/UX Basics", level: "Beginner", rating: "4.8", reviews: "(6)", tags: ["Figma", "Spline"] },
-    { id: 2, img: reactLogo, title: "UI/UX Beginner", level: "Advanced", rating: "4.8", reviews: "(6)", tags: ["Adobe XD", "Framer"] },
-    { id: 3, img: reactLogo, title: "UI/UX Intermediate", level: "Intermediate", rating: "4.7", reviews: "(6)", tags: ["Figma", "Sketch"] },
-    { id: 4, img: reactLogo, title: "UI/UX Pro", level: "Advanced", rating: "4.9", reviews: "(9)", tags: ["Figma", "Prototyping"] },
-    { id: 5, img: reactLogo, title: "Design Expert", level: "Advanced", rating: "4.9", reviews: "(8)", tags: ["Sketch", "Illustrator"] },
-    { id: 6, img: reactLogo, title: "Framer Magic", level: "Beginner", rating: "4.8", reviews: "(7)", tags: ["Framer", "Animation"] },
-    { id: 7, img: reactLogo, title: "Adobe Master", level: "Pro", rating: "5.0", reviews: "(10)", tags: ["Photoshop", "Illustrator"] },
-    { id: 8, img: reactLogo, title: "Spline 3D", level: "Intermediate", rating: "4.8", reviews: "(6)", tags: ["3D", "Spline"] }
+  "UI/UX Design": [
+    {
+      id: 1,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "UI/UX Design",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
   ],
   Management: [
-    { id: 1, img: reactLogo, title: "Business Basics", level: "Beginner", rating: "4.8", reviews: "(6)", tags: ["Business", "Strategy"] },
-    { id: 2, img: reactLogo, title: "Project Management", level: "Intermediate", rating: "4.9", reviews: "(10)", tags: ["Agile", "Scrum"] },
-    { id: 3, img: reactLogo, title: "Leadership Skills", level: "Advanced", rating: "4.8", reviews: "(8)", tags: ["Leadership", "Team"] },
-    { id: 4, img: reactLogo, title: "Strategic Planning", level: "Advanced", rating: "4.9", reviews: "(7)", tags: ["Strategy", "Planning"] },
-    { id: 5, img: reactLogo, title: "Operations Basics", level: "Beginner", rating: "4.6", reviews: "(5)", tags: ["Operations", "Efficiency"] },
-    { id: 6, img: reactLogo, title: "Advanced Operations", level: "Advanced", rating: "4.8", reviews: "(6)", tags: ["Ops", "Management"] },
-    { id: 7, img: reactLogo, title: "Business Growth", level: "Intermediate", rating: "4.8", reviews: "(6)", tags: ["Growth", "Strategy"] },
-    { id: 8, img: reactLogo, title: "HR Management", level: "Intermediate", rating: "5.0", reviews: "(12)", tags: ["HR", "Policy"] }
-  ]
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Management",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Management",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Management",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Management",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Management",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Management",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Management",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Management",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
+  Languages: [
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Languages",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Languages",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Languages",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Languages",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Languages",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Languages",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Languages",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Languages",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
+
+  Accounting: [
+    {
+      id: 1,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: " Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
+
+  "Human Resource": [
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Human Resource",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
+
+  Marketing: [
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+    {
+      id: 1,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 3,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
 };
 
 export default function CardSection() {
@@ -61,7 +559,9 @@ export default function CardSection() {
         <div className="text-center">
           <div className="inline-block text-base sm:text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto px-4">
             <p>Gain real-world skills, learn from experts and</p>
-            <p className="text-center">advance your career with industry focused courses</p>
+            <p className="text-center">
+              advance your career with industry focused courses
+            </p>
           </div>
         </div>
       </div>
@@ -69,15 +569,17 @@ export default function CardSection() {
       <div className="flex flex-wrap justify-center gap-4 mb-6 border-b border-gray-200 pb-3">
         {categories.map((cat) => (
           <div
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
+            key={cat.name}
+            onClick={() => setActiveCategory(cat.name)}
             className={`relative flex items-center gap-2 cursor-pointer py-2 px-4 rounded-md transition text-sm sm:text-base ${
-              activeCategory === cat ? "text-blue-600 font-semibold" : "text-gray-700"
+              activeCategory === cat.name
+                ? "text-blue-600 font-semibold"
+                : "text-gray-700"
             }`}
           >
-            <img src={CategoryIcon} alt="" className="w-5 h-5" />
-            <span>{cat}</span>
-            {activeCategory === cat && (
+            <img src={cat.icon} alt={cat.name} className="w-5 h-5" />
+            <span>{cat.name}</span>
+            {activeCategory === cat.name && (
               <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-blue-500 to-blue-700 rounded-t-lg"></div>
             )}
           </div>
@@ -96,9 +598,13 @@ export default function CardSection() {
             <div className="flex items-center text-yellow-500 mb-1">
               <Star size={16} fill="currentColor" />
               <span className="text-black ml-1">{course.rating}</span>
-              <span className="text-gray-500 text-sm ml-1">{course.reviews}</span>
+              <span className="text-gray-500 text-sm ml-1">
+                {course.reviews}
+              </span>
             </div>
-            <h3 className="font-semibold text-lg text-center">{course.title}</h3>
+            <h3 className="font-semibold text-lg text-center">
+              {course.title}
+            </h3>
             <p className="text-gray-500 text-sm mb-3">{course.level}</p>
             <div className="flex gap-2 flex-wrap justify-center">
               {course.tags.map((tag, index) => (
@@ -115,12 +621,14 @@ export default function CardSection() {
       </div>
 
       <div className="flex justify-center">
-        <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
-          View All
-          <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-            <ArrowUpRight className="text-white" size={18} />
-          </span>
-        </button>
+        <Link to="/courses">
+          <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
+            View All
+            <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <ArrowUpRight className="text-white" size={18} />
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   );

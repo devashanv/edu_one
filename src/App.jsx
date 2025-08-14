@@ -1,40 +1,23 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import HeroSection from "./Components/HeroSection";
-import Search from "./Components/Search";
-import Footer from "./Components/Footer";
-import CardSection from "./Components/CardSection";
-import WhyEduOne from "./Components/WhyEduOne";
-import ProfileSection from "./Components/ProfileSection";
-import AboutUs from "./Components/AboutUs";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import Courses from "./Pages/Courses";
+import JobPortal from "./Pages/JobPortal";
+import Blogs from "./Pages/Blogs";
+import ContactUs from "./Pages/ContactUs";
 
 function App() {
   return (
-    <div>
-      <div className="relative min-h-[50vh] overflow-hidden">
-        <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `
-              linear-gradient(to bottom, transparent 60%, white 100%),
-              linear-gradient(to right, #7dd3fc 10%, white 50%, #7dd3fc 100%)
-            `,
-            backgroundBlendMode: 'multiply',
-          }}
-        />
-        <div className="relative z-10">
-          <Navbar />
-          <HeroSection />
-        </div>
-      </div>
-      <Search />
-      <CardSection/>
-      <WhyEduOne/>
-      <ProfileSection/>
-      <AboutUs/>
-      <Footer/>
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/jobPortal" element={<JobPortal />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contactUs" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
