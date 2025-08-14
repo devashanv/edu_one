@@ -1,25 +1,128 @@
 import React from "react";
+import demoVideo from "../assets/video1.mp4";
+import desktopIcon from "../assets/d.svg";
+import msgIcon from "../assets/m.svg";
+import globeIcon from "../assets/g.svg";
 
-function WhyEduOne() {
+function Video() {
   return (
-    <div>
-      <div className="max-w-4xl mx-auto py-8 text-center">
-        <h1 className="text-6xl md:text-6xl text-black mb-6 leading-tight">
+    <div className="bg-white py-12 px-4 md:px-8">
+   
+      <div className="w-4xl mx-auto text-center mb-12">
+        <h1 className="text-4xl md:text-6xl text-black leading-tight mb-6">
           <span className="block">Why eduOne is</span>
           <span className="block">Your Best Learning</span>
           <span className="block">Choice?</span>
         </h1>
-        <div className="text-center">
-          <div className="inline-block text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            <p>Unlock your true potential and discover a world of full opportunities </p>
-            <p className="text-center">
-             that align with your skills, interests and aspirations
-            </p>
+        <div className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p>
+            Unlock your true potential and discover a world full of opportunities
+          </p>
+          <p>that align with your skills, interests, and aspirations</p>
+        </div>
+      </div>
+
+      <div className="relative flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+     
+        <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-50 rounded-full -z-10 top-1/2 -translate-y-1/2"></div>
+
+        <div className="flex flex-col gap-6 w-full md:w-auto items-center md:items-start">
+         
+          <div className="bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px]">
+            <div className="flex flex-col items-center text-center">
+              <div className="text-blue-600 mb-4 text-4xl">
+                <img
+                  src={desktopIcon}
+                  alt="Desktop Icon"
+                  className="w-12 h-12 mx-auto"
+                />
+              </div>
+              <h3 className="text-lg font-semibold">Learn Anytime, Anywhere</h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Access quality education at your convenience
+              </p>
+              <button className="bg-blue-500 text-white mt-4 px-4 py-2 rounded-full hover:bg-blue-600">
+                Learn now
+              </button>
+            </div>
+          </div>
+
+      
+          <div className="bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px] flex items-center">
+            <div className="text-blue-600 text-3xl mr-4">
+              <img
+                src={globeIcon}
+                alt="Globe Icon"
+                className="w-12 h-12 mx-auto"
+              />
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">1000 +</h4>
+              <p className="text-gray-600 text-sm">
+                Active learners across Sri Lanka
+              </p>
+            </div>
           </div>
         </div>
+
+        
+        <div className="w-[90%] sm:w-[300px] md:w-[360px] h-[300px] sm:h-[400px] md:h-[480px] rounded-3xl overflow-hidden shadow-lg relative">
+          <video
+            src={demoVideo}
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+
+<div className="flex flex-col gap-6 w-full md:w-auto items-center md:items-start">
+  
+  <div className="relative bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px] flex items-center justify-center -mt-6">
+    <div className="flex items-center">
+      <div className="mr-4">
+        <img
+          src={msgIcon}
+       
+          className="w-12 h-12"
+        />
+      </div>
+      <div>
+        <h4 className="font-semibold text-lg">Industry Connections</h4>
+      </div>
+    </div>
+
+ 
+  
+  </div>
+
+  
+  <div className="bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px] relative">
+   
+    <img
+      src={globeIcon}
+      alt="Top Globe"
+      className="w-10 h-10 absolute top-4 left-1/2 transform -translate-x-1/2 animate-pulse"
+    />
+
+    <div className="flex flex-col items-center text-center mt-10">
+      <h3 className="text-lg font-semibold">
+        Explore a World of Courses
+      </h3>
+      <p className="text-gray-600 text-sm mt-2">
+        Find diverse programs to match your career and academic ambitions
+      </p>
+      <button className="bg-blue-500 text-white mt-4 px-4 py-2 rounded-full hover:bg-blue-600">
+        Explore
+      </button>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );
 }
 
-export default WhyEduOne;
+export default Video;

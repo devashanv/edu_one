@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import CardSection from "./Components/CardSection";
 import WhyEduOne from "./Components/WhyEduOne";
 import ProfileSection from "./Components/ProfileSection";
+import AboutUs from "./Components/AboutUs";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           style={{
             backgroundImage: `
               linear-gradient(to bottom, transparent 60%, white 100%),
-              linear-gradient(to right, #7dd3fc 10%, white 30%, white 70%, #7dd3fc 100%)
+              linear-gradient(to right, #7dd3fc 10%, white 50%, #7dd3fc 100%)
             `,
             backgroundBlendMode: 'multiply',
           }}
@@ -30,6 +31,7 @@ function App() {
       <CardSection/>
       <WhyEduOne/>
       <ProfileSection/>
+      <AboutUs/>
       <Footer/>
 
     </div>

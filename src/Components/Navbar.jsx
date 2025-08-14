@@ -27,7 +27,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <button className="flex items-center gap-2 px-4 py-2 border border-white rounded-full bg-transparent text-white rounded-full hover:bg-blue-700 transition-colors">
+      <button className="flex items-center gap-2 px-4 py-2 border border-white bg-transparent text-white rounded-full hover:bg-blue-700 transition-colors">
         <span>Join Now</span>
         <span className="bg-white rounded-full p-1">
           <svg
