@@ -4,8 +4,13 @@ import bsvg from "../assets/b.svg";
 const HeroSection = () => {
   return (
     <div className="max-w-4xl mx-auto py-8 text-center ">
-  
-      <h3 style={{ display: "flex", alignItems: "center", justifyContent: "center " }}>
+      <h3
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center ",
+        }}
+      >
         <img
           src={bsvg}
           alt="icon"
@@ -14,8 +19,7 @@ const HeroSection = () => {
         Sri Lankas's #1 Online Education Platform
       </h3>
 
-    
-      <h1 className="text-6xl md:text-6xl text-sky-600 mb-6 leading-tight">
+      <h1 className="text-6xl md:text-6xl text-sky-600 mb-6 leading-tight mt-5">
         Unlock Your Potential with Future-Ready Learning
       </h1>
 

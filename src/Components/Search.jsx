@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
@@ -8,7 +8,7 @@ import image5 from "../assets/image5.jpg";
 import image6 from "../assets/image6.jpg";
 import image7 from "../assets/image7.jpg";
 
-const SearchWithSlider = () => {
+const SearchWithSlider = ({ onSearch }) => {
   const slides = [
     { url: image1 },
     { url: image2 },
@@ -20,6 +20,7 @@ const SearchWithSlider = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,7 +32,17 @@ const SearchWithSlider = () => {
       });
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  });
+
+  const handleSearch = () => {
+    onSearch(searchTerm);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
 
   return (
     <div className="relative">
@@ -58,10 +69,16 @@ const SearchWithSlider = () => {
                   type="text"
                   placeholder="e.g. UX Designer"
                   className="ml-3 flex-grow px-2 h-full focus:outline-none text-base border-0"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onKeyPress={handleKeyPress}
                 />
               </div>
             </div>
-            <button className="w-32 bg-sky-500 text-white rounded-full hover:bg-blue-700 transition-colors text-base font-medium flex items-center justify-center">
+            <button
+              className="w-32 bg-sky-500 text-white rounded-full hover:bg-blue-700 transition-colors text-base font-medium flex items-center justify-center"
+              onClick={handleSearch}
+            >
               Search
             </button>
           </div>

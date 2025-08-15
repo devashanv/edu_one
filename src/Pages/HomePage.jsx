@@ -8,13 +8,15 @@ import Search from '../Components/Search'
 import AboutUs from '../Components/AboutUs'
 import Slider from '../Components/Slider'
 import HowItWorks from '../Components/HowItWorks'
+import Questions from '../Components/Questions'
 import Footer from '../Components/Footer'
+import Email from '../Components/Email'
 
 function HomePage() {
   return (
    <div>
         <div className="relative min-h-[50vh] overflow-hidden">
-          <div 
+          <div   
             className="absolute inset-0"
             style={{
               backgroundImage: `
@@ -36,6 +38,8 @@ function HomePage() {
         <HowItWorks/>
         <AboutUs/>
         <Slider/>
+        <Questions/>
+        <Email/>
         <Footer/>
     </div>
   )

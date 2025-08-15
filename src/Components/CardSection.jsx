@@ -620,16 +620,16 @@ export default function CardSection() {
         ))}
       </div>
 
-      <div className="flex justify-center">
-        <Link to="/courses">
-          <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
-            View All
-            <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-              <ArrowUpRight className="text-white" size={18} />
-            </span>
-          </button>
-        </Link>
-      </div>
+    <div className="flex justify-center">
+  <Link to="/courses">
+    <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
+      View All
+      <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+        <ArrowUpRight className="text-white" size={18} />
+      </span>
+    </button>
+  </Link>
+</div>
     </div>
   );
 }

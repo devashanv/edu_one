@@ -103,7 +103,7 @@ function Video() {
     <img
       src={globeIcon}
       alt="Top Globe"
-      className="w-10 h-10 absolute top-4 left-1/2 transform -translate-x-1/2 animate-pulse"
+      className="w-10 h-10 absolute top-4 left-1/2 "
     />
 
     <div className="flex flex-col items-center text-center mt-10">

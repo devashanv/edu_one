@@ -33,7 +33,7 @@ export default function AboutUs() {
 
   return (
     <section className="w-10/12 mx-auto py-12">
-      <h2 className="text-4xl md:text-5xl mb-8 text-gray-800 text-left">
+      <h2 className="text-6xl md:text-5xl mb-8 text-gray-800 text-left">
         What Our Students Say About Us
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
