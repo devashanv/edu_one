@@ -60,7 +60,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Next.js", "SSR"],
     },
-     {
+    {
       id: 5,
       img: reactLogo,
       title: "Developing",
@@ -134,7 +134,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Figma", "UI"],
     },
-        {
+    {
       id: 5,
       img: reactLogo,
       title: "UI/UX Design",
@@ -171,7 +171,7 @@ const courses = {
       tags: ["Next.js", "SSR"],
     },
   ],
-  "Management": [
+  Management: [
     {
       id: 1,
       img: vsLogo,
@@ -208,7 +208,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Figma", "UI"],
     },
-        {
+    {
       id: 5,
       img: reactLogo,
       title: "Management",
@@ -245,7 +245,7 @@ const courses = {
       tags: ["Next.js", "SSR"],
     },
   ],
-  "Languages": [
+  Languages: [
     {
       id: 1,
       img: vsLogo,
@@ -282,7 +282,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Figma", "UI"],
     },
-        {
+    {
       id: 5,
       img: reactLogo,
       title: "Languages",
@@ -319,7 +319,7 @@ const courses = {
       tags: ["Next.js", "SSR"],
     },
   ],
-  "Accounting": [
+  Accounting: [
     {
       id: 1,
       img: vsLogo,
@@ -356,7 +356,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Figma", "UI"],
     },
-        {
+    {
       id: 5,
       img: reactLogo,
       title: "Accounting",
@@ -430,7 +430,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Figma", "UI"],
     },
-        {
+    {
       id: 5,
       img: reactLogo,
       title: "Human Resource",
@@ -467,7 +467,7 @@ const courses = {
       tags: ["Next.js", "SSR"],
     },
   ],
-  "Marketing": [
+  Marketing: [
     {
       id: 1,
       img: vsLogo,
@@ -504,7 +504,7 @@ const courses = {
       reviews: "(7)",
       tags: ["Figma", "UI"],
     },
-        {
+    {
       id: 5,
       img: reactLogo,
       title: "Marketing",
@@ -541,7 +541,6 @@ const courses = {
       tags: ["Next.js", "SSR"],
     },
   ],
-  
 };
 
 export default function CardSection() {
@@ -550,7 +549,6 @@ export default function CardSection() {
 
   return (
     <div className="w-11/12 mx-auto">
-   
       <div className="max-w-4xl mx-auto py-6 text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black mb-4 leading-tight">
           <span className="block">Your Journey to</span>
@@ -567,7 +565,6 @@ export default function CardSection() {
         </div>
       </div>
 
-      
       <div className="flex flex-wrap justify-center gap-4 mb-6 border-b border-gray-200 pb-3">
         {categories.map((cat) => (
           <div
@@ -588,7 +585,6 @@ export default function CardSection() {
         ))}
       </div>
 
-     
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
         {filteredCourses.length > 0 ? (
           filteredCourses.map((course) => (
@@ -633,7 +629,6 @@ export default function CardSection() {
         )}
       </div>
 
-   
       <div className="flex justify-center">
         <Link to="/courses">
           <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
