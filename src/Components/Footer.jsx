@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-white to-sky-200 text-gray-800">
       <div className="w-11/12 mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-8 items-start">
-          <div className="w-60">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-8 items-start">
+          <div className="w-full max-w-xs">
             <img src={logo} alt="EduOne" className="h-12 mb-4" />
             <p className="text-sm leading-relaxed">
               Empowering the next generation with innovative learning
@@ -17,8 +17,8 @@ const Footer = () => {
               largest education platform.
             </p>
           </div>
-          <div className="border-b border-gray-300 md:border-none md:pb-0 pb-6   lg:ml-10">
-            <h3 className="font-bold mb-3 ">Quick Links</h3>
+          <div className="border-b border-gray-300 sm:border-none pb-6 sm:pb-0">
+            <h3 className="font-bold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#">Home</a></li>
               <li><a href="#">Courses</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div className="border-b border-gray-300 md:border-none md:pb-0 pb-6">
+          <div className="border-b border-gray-300 sm:border-none pb-6 sm:pb-0">
             <h3 className="font-bold mb-3">Courses</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#">IT & Technology</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li><a href="#">Science & Engineering</a></li>
             </ul>
           </div>
-          <div className="border-b border-gray-300 md:border-none md:pb-0 pb-6">
+          <div className="border-b border-gray-300 sm:border-none pb-6 sm:pb-0">
             <h3 className="font-bold mb-3">Support</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#">FAQs</a></li>
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-3">Contact US</h3>
+            <h3 className="font-bold mb-3">Contact Us</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <FaPhoneAlt className="text-lg" />

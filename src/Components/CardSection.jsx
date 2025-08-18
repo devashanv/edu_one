@@ -27,7 +27,7 @@ const courses = {
     {
       id: 1,
       img: reactLogo,
-      title: "React Basics",
+      title: "Developing",
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
@@ -36,7 +36,7 @@ const courses = {
     {
       id: 2,
       img: figmalogo,
-      title: "Advanced React",
+      title: "Developing",
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
@@ -45,7 +45,7 @@ const courses = {
     {
       id: 3,
       img: vsLogo,
-      title: "JavaScript Mastery",
+      title: "Developing",
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
@@ -54,43 +54,43 @@ const courses = {
     {
       id: 4,
       img: figmalogo,
-      title: "Next.js Pro",
+      title: "Developing",
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
       tags: ["Next.js", "SSR"],
     },
-    {
-      id: 1,
-      img: vsLogo,
-      title: "React Basics",
+     {
+      id: 5,
+      img: reactLogo,
+      title: "Developing",
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
       tags: ["React", "JS"],
     },
     {
-      id: 2,
-      img: reactLogo,
-      title: "Advanced React",
+      id: 6,
+      img: figmalogo,
+      title: "Developing",
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
       tags: ["Hooks", "Context"],
     },
     {
-      id: 3,
+      id: 7,
       img: vsLogo,
-      title: "JavaScript Mastery",
+      title: "Developing",
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
       tags: ["JS", "ES6"],
     },
     {
-      id: 4,
+      id: 8,
       img: figmalogo,
-      title: "Next.js Pro",
+      title: "Developing",
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
@@ -105,7 +105,7 @@ const courses = {
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
-      tags: ["React", "JS"],
+      tags: ["Design", "UX"],
     },
     {
       id: 2,
@@ -114,7 +114,7 @@ const courses = {
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
-      tags: ["Hooks", "Context"],
+      tags: ["Figma", "Prototyping"],
     },
     {
       id: 3,
@@ -123,7 +123,7 @@ const courses = {
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
-      tags: ["JS", "ES6"],
+      tags: ["Wireframe", "UX"],
     },
     {
       id: 4,
@@ -132,10 +132,10 @@ const courses = {
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
-      tags: ["Next.js", "SSR"],
+      tags: ["Figma", "UI"],
     },
-    {
-      id: 1,
+        {
+      id: 5,
       img: reactLogo,
       title: "UI/UX Design",
       level: "Beginner",
@@ -144,8 +144,8 @@ const courses = {
       tags: ["React", "JS"],
     },
     {
-      id: 2,
-      img: reactLogo,
+      id: 6,
+      img: figmalogo,
       title: "UI/UX Design",
       level: "Advanced",
       rating: "4.9",
@@ -153,8 +153,8 @@ const courses = {
       tags: ["Hooks", "Context"],
     },
     {
-      id: 3,
-      img: reactLogo,
+      id: 7,
+      img: vsLogo,
       title: "UI/UX Design",
       level: "Intermediate",
       rating: "4.7",
@@ -162,8 +162,8 @@ const courses = {
       tags: ["JS", "ES6"],
     },
     {
-      id: 4,
-      img: reactLogo,
+      id: 8,
+      img: figmalogo,
       title: "UI/UX Design",
       level: "Advanced",
       rating: "4.9",
@@ -171,15 +171,15 @@ const courses = {
       tags: ["Next.js", "SSR"],
     },
   ],
-  Management: [
+  "Management": [
     {
       id: 1,
-      img: reactLogo,
+      img: vsLogo,
       title: "Management",
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
-      tags: ["React", "JS"],
+      tags: ["Design", "UX"],
     },
     {
       id: 2,
@@ -188,16 +188,16 @@ const courses = {
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
-      tags: ["Hooks", "Context"],
+      tags: ["Figma", "Prototyping"],
     },
     {
       id: 3,
-      img: reactLogo,
+      img: figmalogo,
       title: "Management",
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
-      tags: ["JS", "ES6"],
+      tags: ["Wireframe", "UX"],
     },
     {
       id: 4,
@@ -206,10 +206,10 @@ const courses = {
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
-      tags: ["Next.js", "SSR"],
+      tags: ["Figma", "UI"],
     },
-    {
-      id: 1,
+        {
+      id: 5,
       img: reactLogo,
       title: "Management",
       level: "Beginner",
@@ -218,8 +218,8 @@ const courses = {
       tags: ["React", "JS"],
     },
     {
-      id: 2,
-      img: reactLogo,
+      id: 6,
+      img: figmalogo,
       title: "Management",
       level: "Advanced",
       rating: "4.9",
@@ -227,8 +227,8 @@ const courses = {
       tags: ["Hooks", "Context"],
     },
     {
-      id: 3,
-      img: reactLogo,
+      id: 7,
+      img: vsLogo,
       title: "Management",
       level: "Intermediate",
       rating: "4.7",
@@ -236,174 +236,172 @@ const courses = {
       tags: ["JS", "ES6"],
     },
     {
-      id: 4,
-      img: reactLogo,
+      id: 8,
+      img: figmalogo,
       title: "Management",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(7)",
-      tags: ["Next.js", "SSR"],
-    },
-  ],
-  Languages: [
-    {
-      id: 1,
-      img: reactLogo,
-      title: "Languages",
-      level: "Beginner",
-      rating: "4.8",
-      reviews: "(6)",
-      tags: ["React", "JS"],
-    },
-    {
-      id: 2,
-      img: reactLogo,
-      title: "Languages",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(10)",
-      tags: ["Hooks", "Context"],
-    },
-    {
-      id: 3,
-      img: reactLogo,
-      title: "Languages",
-      level: "Intermediate",
-      rating: "4.7",
-      reviews: "(8)",
-      tags: ["JS", "ES6"],
-    },
-    {
-      id: 4,
-      img: reactLogo,
-      title: "Languages",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(7)",
-      tags: ["Next.js", "SSR"],
-    },
-    {
-      id: 1,
-      img: reactLogo,
-      title: "Languages",
-      level: "Beginner",
-      rating: "4.8",
-      reviews: "(6)",
-      tags: ["React", "JS"],
-    },
-    {
-      id: 2,
-      img: reactLogo,
-      title: "Languages",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(10)",
-      tags: ["Hooks", "Context"],
-    },
-    {
-      id: 3,
-      img: reactLogo,
-      title: "Languages",
-      level: "Intermediate",
-      rating: "4.7",
-      reviews: "(8)",
-      tags: ["JS", "ES6"],
-    },
-    {
-      id: 4,
-      img: reactLogo,
-      title: "Languages",
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
       tags: ["Next.js", "SSR"],
     },
   ],
-
-  Accounting: [
+  "Languages": [
     {
       id: 1,
-      img: reactLogo,
-      title: " Accounting",
+      img: vsLogo,
+      title: "Languages",
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
-      tags: ["React", "JS"],
+      tags: ["Design", "UX"],
     },
     {
       id: 2,
       img: reactLogo,
-      title: " Accounting",
+      title: "Languages",
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
-      tags: ["Hooks", "Context"],
+      tags: ["Figma", "Prototyping"],
     },
     {
       id: 3,
-      img: reactLogo,
-      title: " Accounting",
+      img: figmalogo,
+      title: "Languages",
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
-      tags: ["JS", "ES6"],
+      tags: ["Wireframe", "UX"],
     },
     {
       id: 4,
       img: reactLogo,
-      title: " Accounting",
+      title: "Languages",
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
-      tags: ["Next.js", "SSR"],
+      tags: ["Figma", "UI"],
     },
-    {
-      id: 1,
+        {
+      id: 5,
       img: reactLogo,
-      title: " Accounting",
+      title: "Languages",
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
       tags: ["React", "JS"],
     },
     {
-      id: 2,
-      img: reactLogo,
-      title: " Accounting",
+      id: 6,
+      img: figmalogo,
+      title: "Languages",
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
       tags: ["Hooks", "Context"],
     },
     {
-      id: 3,
-      img: reactLogo,
-      title: " Accounting",
+      id: 7,
+      img: vsLogo,
+      title: "Languages",
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
       tags: ["JS", "ES6"],
     },
     {
-      id: 4,
-      img: reactLogo,
-      title: " Accounting",
+      id: 8,
+      img: figmalogo,
+      title: "Languages",
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
       tags: ["Next.js", "SSR"],
     },
   ],
-
+  "Accounting": [
+    {
+      id: 1,
+      img: vsLogo,
+      title: "Accounting",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["Design", "UX"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Figma", "Prototyping"],
+    },
+    {
+      id: 3,
+      img: figmalogo,
+      title: "Accounting",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["Wireframe", "UX"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Figma", "UI"],
+    },
+        {
+      id: 5,
+      img: reactLogo,
+      title: "Accounting",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 6,
+      img: figmalogo,
+      title: "Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 7,
+      img: vsLogo,
+      title: "Accounting",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 8,
+      img: figmalogo,
+      title: "Accounting",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
   "Human Resource": [
     {
       id: 1,
-      img: reactLogo,
+      img: vsLogo,
       title: "Human Resource",
       level: "Beginner",
       rating: "4.8",
       reviews: "(6)",
-      tags: ["React", "JS"],
+      tags: ["Design", "UX"],
     },
     {
       id: 2,
@@ -412,16 +410,16 @@ const courses = {
       level: "Advanced",
       rating: "4.9",
       reviews: "(10)",
-      tags: ["Hooks", "Context"],
+      tags: ["Figma", "Prototyping"],
     },
     {
       id: 3,
-      img: reactLogo,
+      img: figmalogo,
       title: "Human Resource",
       level: "Intermediate",
       rating: "4.7",
       reviews: "(8)",
-      tags: ["JS", "ES6"],
+      tags: ["Wireframe", "UX"],
     },
     {
       id: 4,
@@ -430,10 +428,10 @@ const courses = {
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
-      tags: ["Next.js", "SSR"],
+      tags: ["Figma", "UI"],
     },
-    {
-      id: 1,
+        {
+      id: 5,
       img: reactLogo,
       title: "Human Resource",
       level: "Beginner",
@@ -442,8 +440,8 @@ const courses = {
       tags: ["React", "JS"],
     },
     {
-      id: 2,
-      img: reactLogo,
+      id: 6,
+      img: figmalogo,
       title: "Human Resource",
       level: "Advanced",
       rating: "4.9",
@@ -451,8 +449,8 @@ const courses = {
       tags: ["Hooks", "Context"],
     },
     {
-      id: 3,
-      img: reactLogo,
+      id: 7,
+      img: vsLogo,
       title: "Human Resource",
       level: "Intermediate",
       rating: "4.7",
@@ -460,90 +458,90 @@ const courses = {
       tags: ["JS", "ES6"],
     },
     {
-      id: 4,
-      img: reactLogo,
+      id: 8,
+      img: figmalogo,
       title: "Human Resource",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(7)",
-      tags: ["Next.js", "SSR"],
-    },
-  ],
-
-  Marketing: [
-    {
-      id: 1,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Beginner",
-      rating: "4.8",
-      reviews: "(6)",
-      tags: ["React", "JS"],
-    },
-    {
-      id: 2,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(10)",
-      tags: ["Hooks", "Context"],
-    },
-    {
-      id: 3,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Intermediate",
-      rating: "4.7",
-      reviews: "(8)",
-      tags: ["JS", "ES6"],
-    },
-    {
-      id: 4,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(7)",
-      tags: ["Next.js", "SSR"],
-    },
-    {
-      id: 1,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Beginner",
-      rating: "4.8",
-      reviews: "(6)",
-      tags: ["React", "JS"],
-    },
-    {
-      id: 2,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Advanced",
-      rating: "4.9",
-      reviews: "(10)",
-      tags: ["Hooks", "Context"],
-    },
-    {
-      id: 3,
-      img: reactLogo,
-      title: "Marketing",
-      level: "Intermediate",
-      rating: "4.7",
-      reviews: "(8)",
-      tags: ["JS", "ES6"],
-    },
-    {
-      id: 4,
-      img: reactLogo,
-      title: "Marketing",
       level: "Advanced",
       rating: "4.9",
       reviews: "(7)",
       tags: ["Next.js", "SSR"],
     },
   ],
+  "Marketing": [
+    {
+      id: 1,
+      img: vsLogo,
+      title: "Marketing",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["Design", "UX"],
+    },
+    {
+      id: 2,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Figma", "Prototyping"],
+    },
+    {
+      id: 3,
+      img: figmalogo,
+      title: "Marketing",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["Wireframe", "UX"],
+    },
+    {
+      id: 4,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Figma", "UI"],
+    },
+        {
+      id: 5,
+      img: reactLogo,
+      title: "Marketing",
+      level: "Beginner",
+      rating: "4.8",
+      reviews: "(6)",
+      tags: ["React", "JS"],
+    },
+    {
+      id: 6,
+      img: figmalogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(10)",
+      tags: ["Hooks", "Context"],
+    },
+    {
+      id: 7,
+      img: vsLogo,
+      title: "Marketing",
+      level: "Intermediate",
+      rating: "4.7",
+      reviews: "(8)",
+      tags: ["JS", "ES6"],
+    },
+    {
+      id: 8,
+      img: figmalogo,
+      title: "Marketing",
+      level: "Advanced",
+      rating: "4.9",
+      reviews: "(7)",
+      tags: ["Next.js", "SSR"],
+    },
+  ],
+  
 };
 
 export default function CardSection() {
@@ -552,8 +550,9 @@ export default function CardSection() {
 
   return (
     <div className="w-11/12 mx-auto">
+   
       <div className="max-w-4xl mx-auto py-6 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black mb-4 leading-tight ">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black mb-4 leading-tight">
           <span className="block">Your Journey to</span>
           <span className="block">Expertise Starts</span>
           <span className="block">Here</span>
@@ -568,6 +567,7 @@ export default function CardSection() {
         </div>
       </div>
 
+      
       <div className="flex flex-wrap justify-center gap-4 mb-6 border-b border-gray-200 pb-3">
         {categories.map((cat) => (
           <div
@@ -588,50 +588,62 @@ export default function CardSection() {
         ))}
       </div>
 
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
-        {filteredCourses.map((course) => (
-          <div
-            key={course.id}
-            className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center border border-transparent hover:border-blue-500 hover:bg-gradient-to-br hover:from-blue-50 hover:to-white transition"
-          >
-            <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center mb-3">
-              <img src={course.img} alt={course.title} className="w-10 h-10" />
-            </div>
-            <div className="flex items-center text-yellow-500 mb-1">
-              <Star size={16} fill="currentColor" />
-              <span className="text-black ml-1">{course.rating}</span>
-              <span className="text-gray-500 text-sm ml-1">
-                {course.reviews}
-              </span>
-            </div>
-            <h3 className="font-semibold text-lg text-center">
-              {course.title}
-            </h3>
-            <p className="text-gray-500 text-sm mb-3">{course.level}</p>
-            <div className="flex gap-2 flex-wrap justify-center">
-              {course.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="bg-white border rounded-full px-3 py-1 text-gray-700 text-sm"
-                >
-                  {tag}
+        {filteredCourses.length > 0 ? (
+          filteredCourses.map((course) => (
+            <div
+              key={course.id}
+              className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center border border-transparent hover:border-blue-500 hover:bg-gradient-to-br hover:from-blue-50 hover:to-white transition"
+            >
+              <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center mb-3">
+                <img
+                  src={course.img}
+                  alt={course.title}
+                  className="w-10 h-10"
+                />
+              </div>
+              <div className="flex items-center text-yellow-500 mb-1">
+                <Star size={16} fill="currentColor" />
+                <span className="text-black ml-1">{course.rating}</span>
+                <span className="text-gray-500 text-sm ml-1">
+                  {course.reviews}
                 </span>
-              ))}
+              </div>
+              <h3 className="font-semibold text-lg text-center">
+                {course.title}
+              </h3>
+              <p className="text-gray-500 text-sm mb-3">{course.level}</p>
+              <div className="flex gap-2 flex-wrap justify-center">
+                {course.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="bg-white border rounded-full px-3 py-1 text-gray-700 text-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="text-gray-500 text-center col-span-full">
+            No courses available for this category.
+          </p>
+        )}
       </div>
 
-    <div className="flex justify-center">
-  <Link to="/courses">
-    <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
-      View All
-      <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-        <ArrowUpRight className="text-white" size={18} />
-      </span>
-    </button>
-  </Link>
-</div>
+   
+      <div className="flex justify-center">
+        <Link to="/courses">
+          <button className="flex items-center gap-2 px-6 py-3 text-blue-600 font-semibold border border-blue-500 rounded-full hover:bg-blue-50 transition">
+            View All
+            <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <ArrowUpRight className="text-white" size={18} />
+            </span>
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -32,7 +32,7 @@ const SearchWithSlider = ({ onSearch }) => {
       });
     }, 3000);
     return () => clearInterval(interval);
-  });
+  }, [slides.length]);
 
   const handleSearch = () => {
     onSearch(searchTerm);
@@ -46,11 +46,11 @@ const SearchWithSlider = ({ onSearch }) => {
 
   return (
     <div className="relative">
-      <div className="absolute top-4 left-0 right-0 z-10">
+      <div className="z-10 mb-4">
         <div className="max-w-xl mx-auto">
           <div className="flex items-stretch gap-2 h-14">
             <div className="flex-1 flex items-center bg-white rounded-full border border-gray-200 shadow-sm overflow-hidden">
-              <div className="flex items-center px-5 h-full">
+              <div className="flex items-center px-4 h-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5 text-black"
@@ -85,9 +85,9 @@ const SearchWithSlider = ({ onSearch }) => {
         </div>
       </div>
 
-      <div className="w-full overflow-hidden pt-24 pb-8 ">
+      <div className="w-full overflow-hidden pb-4 pt-2 sm:pt-4 lg:pt-6">
         <div
-          className="flex transition-transform duration-500 ease-in-out pt-9"
+          className="flex transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 25}%)`,
             width: `${slides.length * 25}%`,
@@ -96,7 +96,7 @@ const SearchWithSlider = ({ onSearch }) => {
           {slides.map((slide, index) => (
             <div key={index} className="w-1/7 flex-shrink-0 px-2">
               <div
-                className="w-80 h-80 bg-cover bg-center rounded-xl shadow-lg"
+                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-cover bg-center rounded-xl shadow-lg"
                 style={{
                   backgroundImage: `url(${slide.url})`,
                   backgroundSize: "cover",

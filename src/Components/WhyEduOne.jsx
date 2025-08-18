@@ -10,29 +10,26 @@ import arrow2 from "../assets/arrow2.png";
 function Video() {
   return (
     <div className="bg-white py-12 px-4 md:px-8 relative z-0">
-      {/* Heading Section */}
       <div className="w-4xl mx-auto text-center mb-12">
-        <h1 className="text-4xl md:text-6xl text-black leading-tight mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl text-black leading-tight mb-6">
           <span className="block">Why eduOne is</span>
           <span className="block">Your Best Learning</span>
           <span className="block">Choice?</span>
         </h1>
-        <div className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <div className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
           <p>
-            Unlock your true potential and discover a world full of opportunities
+            Unlock your true potential and discover a world full of
+            opportunities
           </p>
           <p>that align with your skills, interests, and aspirations</p>
         </div>
       </div>
 
       <div className="relative flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 z-10">
-        {/* Background Circle */}
-        <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-50 rounded-full top-1/2 -translate-y-1/2 z-0"></div>
+        <div className="absolute w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[500px] bg-blue-50 rounded-full top-1/2 -translate-y-1/2 z-0"></div>
 
-        {/* Left Column */}
         <div className="flex flex-col gap-6 w-full md:w-auto items-center md:items-start z-10">
-          {/* Learn Anytime Card */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px]">
+          <div className="bg-white shadow-lg rounded-2xl p-6 w-[95%] sm:w-[280px]">
             <div className="flex flex-col items-center text-center">
               <div className="text-blue-600 mb-4 text-4xl">
                 <img
@@ -51,8 +48,7 @@ function Video() {
             </div>
           </div>
 
-          {/* Active Learners Card */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px] flex items-center relative">
+          <div className="bg-white shadow-lg rounded-2xl p-6 w-[95%] sm:w-[280px] flex items-center relative">
             <div className="text-blue-600 text-3xl mr-4">
               <img
                 src={globeIcon}
@@ -67,17 +63,15 @@ function Video() {
               </p>
             </div>
 
-            {/* Animated Arrow BELOW Active Learners */}
             <img
               src={arrow1}
               alt="Arrow Animation"
-              className="absolute -bottom-16 -right-4 w-16 h-16 animate-fade-in"
+              className="absolute hidden sm:block -bottom-12 sm:-bottom-16 right-8 sm:right-16 w-12 sm:w-16 h-12 sm:h-16 animate-fade-in"
             />
           </div>
         </div>
 
-        {/* Video Section */}
-        <div className="relative w-[90%] sm:w-[300px] md:w-[360px] h-[300px] sm:h-[400px] md:h-[480px] rounded-3xl overflow-hidden shadow-lg z-10">
+        <div className="relative w-[95%] sm:w-[300px] md:w-[420px] h-[220px] sm:h-[400px] md:h-[480px] rounded-3xl overflow-hidden shadow-lg z-10">
           <img
             src={Image}
             alt="Background"
@@ -93,15 +87,12 @@ function Video() {
           />
         </div>
 
-        {/* Right Column */}
         <div className="flex flex-col gap-6 w-full md:w-auto items-center md:items-start z-10">
-          {/* Industry Connections Card */}
-          <div className="relative bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px] flex items-center justify-center -mt-6">
-            {/* Animated Arrow ABOVE Industry Connections */}
+          <div className="relative bg-white shadow-lg rounded-2xl p-6 w-[95%] sm:w-[280px] flex items-center justify-center -mt-6">
             <img
               src={arrow2}
               alt="Arrow Animation"
-              className="absolute -top-12 left-0 w-16 h-16 transform -translate-x-4 animate-fade-in"
+              className="absolute hidden sm:block -top-8 sm:-top-12 left-4 sm:left-6 w-12 sm:w-16 h-12 sm:h-16 transform -translate-x-4 animate-fade-in"
             />
             <div className="flex items-center">
               <div className="mr-4">
@@ -113,12 +104,11 @@ function Video() {
             </div>
           </div>
 
-          {/* Explore Courses Card */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 w-[90%] sm:w-[280px] relative">
+          <div className="bg-white shadow-lg rounded-2xl p-6 w-[95%] sm:w-[280px] relative">
             <img
               src={globeIcon}
               alt="Top Globe"
-              className="w-10 h-10 absolute top-4 left-1/2"
+              className="w-8 sm:w-10 h-8 sm:h-10 absolute top-4 left-1/2 -translate-x-1/2"
             />
             <div className="flex flex-col items-center text-center mt-10">
               <h3 className="text-lg font-semibold">

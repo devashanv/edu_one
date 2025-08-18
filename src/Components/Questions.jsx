@@ -49,7 +49,7 @@ const FAQSection = () => {
 
   return (
     <div className="w-10/12 mx-auto py-10">
-      <h2 className="text-5xl mb-8 text-left">Frequently Asked Questions</h2>
+      <h2 className="text-4xl sm:text-5xl md:text-6xl mb-8 text-left">Frequently Asked Questions</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         {questions.map((item) => (
           <div
