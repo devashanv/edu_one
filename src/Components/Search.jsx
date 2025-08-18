@@ -46,7 +46,7 @@ const SearchWithSlider = ({ onSearch }) => {
 
   return (
     <div className="relative">
-      <div className="absolute top-10 left-0 right-0 z-10">
+      <div className="absolute top-4 left-0 right-0 z-10">
         <div className="max-w-xl mx-auto">
           <div className="flex items-stretch gap-2 h-14">
             <div className="flex-1 flex items-center bg-white rounded-full border border-gray-200 shadow-sm overflow-hidden">

@@ -9,6 +9,8 @@ import langIcon from "../assets/l.svg";
 import hrIcon from "../assets/a.svg";
 import marketingIcon from "../assets/mk.svg";
 import reactLogo from "../assets/react.svg";
+import figmalogo from "../assets/figma.svg";
+import vsLogo from "../assets/vs.svg";
 
 const categories = [
   { name: "Developing", icon: devIcon },
@@ -33,7 +35,7 @@ const courses = {
     },
     {
       id: 2,
-      img: reactLogo,
+      img: figmalogo,
       title: "Advanced React",
       level: "Advanced",
       rating: "4.9",
@@ -42,7 +44,7 @@ const courses = {
     },
     {
       id: 3,
-      img: reactLogo,
+      img: vsLogo,
       title: "JavaScript Mastery",
       level: "Intermediate",
       rating: "4.7",
@@ -51,7 +53,7 @@ const courses = {
     },
     {
       id: 4,
-      img: reactLogo,
+      img: figmalogo,
       title: "Next.js Pro",
       level: "Advanced",
       rating: "4.9",
@@ -60,7 +62,7 @@ const courses = {
     },
     {
       id: 1,
-      img: reactLogo,
+      img: vsLogo,
       title: "React Basics",
       level: "Beginner",
       rating: "4.8",
@@ -78,7 +80,7 @@ const courses = {
     },
     {
       id: 3,
-      img: reactLogo,
+      img: vsLogo,
       title: "JavaScript Mastery",
       level: "Intermediate",
       rating: "4.7",
@@ -87,7 +89,7 @@ const courses = {
     },
     {
       id: 4,
-      img: reactLogo,
+      img: figmalogo,
       title: "Next.js Pro",
       level: "Advanced",
       rating: "4.9",
@@ -98,7 +100,7 @@ const courses = {
   "UI/UX Design": [
     {
       id: 1,
-      img: reactLogo,
+      img: vsLogo,
       title: "UI/UX Design",
       level: "Beginner",
       rating: "4.8",
@@ -116,7 +118,7 @@ const courses = {
     },
     {
       id: 3,
-      img: reactLogo,
+      img: figmalogo,
       title: "UI/UX Design",
       level: "Intermediate",
       rating: "4.7",
@@ -592,7 +594,7 @@ export default function CardSection() {
             key={course.id}
             className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center border border-transparent hover:border-blue-500 hover:bg-gradient-to-br hover:from-blue-50 hover:to-white transition"
           >
-            <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-3">
+            <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center mb-3">
               <img src={course.img} alt={course.title} className="w-10 h-10" />
             </div>
             <div className="flex items-center text-yellow-500 mb-1">

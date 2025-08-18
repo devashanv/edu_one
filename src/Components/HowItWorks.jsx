@@ -2,6 +2,10 @@ import React from "react";
 import { FaArrowLeft, FaCertificate, FaBriefcase } from "react-icons/fa";
 import img1 from "../assets/dg.jpeg"; 
 import logo from "../assets/logo.jpeg";   
+import reactlogo from "../assets/react.svg";   
+import figmalogo from "../assets/figma.svg";   
+import vslogo from "../assets/vs.svg";   
+
 
 const steps = [
   {
@@ -87,7 +91,7 @@ function Next() {
           <div className="absolute top-[24rem] left-0 w-[60%] flex items-center gap-6 z-30 bg-white rounded-lg">
             <div className="overflow-hidden w-full">
               <div className="flex items-center gap-8 animate-scroll-horizontal">
-                {[logo, logo, logo, logo].map((item, index) => (
+                {[logo, reactlogo, figmalogo, vslogo].map((item, index) => (
                   <img
                     key={index}
                     src={item}
@@ -98,7 +102,7 @@ function Next() {
                 <p className="text-lg font text-gray-700 whitespace-nowrap">
                   10k Job Opportunities
                 </p>
-                {[logo, logo, logo].map((item, index) => (
+                {[logo, reactlogo, figmalogo].map((item, index) => (
                   <img
                     key={index + 10}
                     src={item}

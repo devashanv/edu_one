@@ -44,7 +44,7 @@ function ProfileSection() {
       </div>
 
     
-      <div className="relative overflow-hidden h-[380px]">
+      <div className="relative overflow-hidden h-[320px]">
        
         <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-white to-transparent z-10"></div>
         <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
