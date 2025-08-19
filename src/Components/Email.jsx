@@ -18,16 +18,15 @@ export default function GradientCard() {
         { user_email: email },
         "dmvWovS7JIPnTHIB9"
       )
-           .then(() => {
-      
+      .then(() => {
         return emailjs.send(
           "service_cv4ipp4",
           "template_8gj8034",
           { user_email: email },
           "dmvWovS7JIPnTHIB9"
         );
-    })
-      
+      })
+
       .then(
         (result) => {
           console.log("SUCCESS!", result.status, result.text);
@@ -66,7 +65,6 @@ export default function GradientCard() {
           onSubmit={sendEmail}
           className="flex flex-col md:flex-row items-center gap-4 max-w-xl w-full mx-auto"
         >
-       
           <div className="flex items-center w-full bg-white rounded-full border px-4 py-3">
             <img
               src={EmailIcon}
@@ -83,7 +81,6 @@ export default function GradientCard() {
             />
           </div>
 
-        
           <button
             type="submit"
             disabled={loading}
@@ -93,7 +90,6 @@ export default function GradientCard() {
           </button>
         </form>
 
-      
         {message && <p className="mt-4 text-gray-700 font-medium">{message}</p>}
       </div>
     </section>

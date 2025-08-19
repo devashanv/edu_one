@@ -12,38 +12,66 @@ const Footer = () => {
           <div className="w-full max-w-xs">
             <img src={logo} alt="EduOne" className="h-12 mb-4" />
             <p className="text-sm leading-relaxed">
-              Empowering the next generation with innovative learning
-              solutions. Explore, learn, and achieve with Edu One Sri Lanka&apos;s
-              largest education platform.
+              Empowering the next generation with innovative learning solutions.
+              Explore, learn, and achieve with Edu One Sri Lanka&apos;s largest
+              education platform.
             </p>
           </div>
           <div className="border-b border-gray-300 sm:border-none gap-15 pb-6 sm:pb-0 ">
             <h3 className="font-bold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Job Portal</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Courses</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Job Portal</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
             </ul>
           </div>
           <div className="border-b border-gray-300 sm:border-none pb-6 sm:pb-0">
             <h3 className="font-bold mb-3">Courses</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#">IT & Technology</a></li>
-              <li><a href="#">Business & Management</a></li>
-              <li><a href="#">Language & Communication</a></li>
-              <li><a href="#">Creative Design</a></li>
-              <li><a href="#">Science & Engineering</a></li>
+              <li>
+                <a href="#">IT & Technology</a>
+              </li>
+              <li>
+                <a href="#">Business & Management</a>
+              </li>
+              <li>
+                <a href="#">Language & Communication</a>
+              </li>
+              <li>
+                <a href="#">Creative Design</a>
+              </li>
+              <li>
+                <a href="#">Science & Engineering</a>
+              </li>
             </ul>
           </div>
           <div className="border-b border-gray-300 sm:border-none pb-6 sm:pb-0">
             <h3 className="font-bold mb-3">Support</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
             </ul>
           </div>
           <div>
@@ -65,9 +93,15 @@ const Footer = () => {
             © 2025 Edu One. All rights reserved. Powered by All in One Holdings
           </div>
           <div className="flex space-x-4 mt-4 md:mt-0 text-lg">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaXTwitter /></a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaXTwitter />
+            </a>
           </div>
         </div>
       </div>

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function JobPortal() {
-  return (
-    <div></div>
-  )
+  return <div></div>;
 }
 
-export default JobPortal
+export default JobPortal;
