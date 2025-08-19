@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
@@ -8,34 +11,31 @@ import image5 from "../assets/image5.jpg";
 import image6 from "../assets/image6.jpg";
 import image7 from "../assets/image7.jpg";
 
-const SearchWithSlider = ({ onSearch }) => {
-  const slides = [
-    { url: image1 },
-    { url: image2 },
-    { url: image3 },
-    { url: image4 },
-    { url: image5 },
-    { url: image6 },
-    { url: image7 },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
+const SearchWithSlider = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => {
-        if (prev >= slides.length - 5) {
-          return 0;
-        }
-        return prev + 1;
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const slidesToShow = windowWidth < 640 ? 1 : windowWidth < 1024 ? 3 : 5;
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const slides = [image1, image2, image3, image4, image5, image6, image7];
 
   const handleSearch = () => {
-    onSearch(searchTerm);
+    alert(`Searching for: ${searchTerm}`);
   };
 
   const handleKeyPress = (e) => {
@@ -45,8 +45,8 @@ const SearchWithSlider = ({ onSearch }) => {
   };
 
   return (
-    <div className="relative">
-      <div className="z-10 mb-4">
+    <div className="w-[90%] mx-auto py-6">
+      <div className="z-10 mb-6">
         <div className="max-w-xl mx-auto">
           <div className="flex items-stretch gap-2 h-14">
             <div className="flex-1 flex items-center bg-white rounded-full border border-gray-200 shadow-sm overflow-hidden">
@@ -85,28 +85,17 @@ const SearchWithSlider = ({ onSearch }) => {
         </div>
       </div>
 
-      <div className="w-full overflow-hidden pb-4 pt-2 sm:pt-4 lg:pt-6">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{
-            transform: `translateX(-${currentIndex * 25}%)`,
-            width: `${slides.length * 25}%`,
-          }}
-        >
-          {slides.map((slide, index) => (
-            <div key={index} className="w-1/7 flex-shrink-0 px-2">
-              <div
-                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-cover bg-center rounded-xl shadow-lg"
-                style={{
-                  backgroundImage: `url(${slide.url})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <Slider key={windowWidth} {...settings}>
+        {slides.map((img, index) => (
+          <div key={index} className="p-2">
+            <img
+              src={img}
+              alt={`Slide ${index}`}
+              className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
