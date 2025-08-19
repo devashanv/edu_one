@@ -91,7 +91,7 @@ function ProfileSection() {
                   key={i}
                   src={img}
                   alt="profile"
-                  className="w-16 h-16 sm:w-6 sm:h-6 md:w-20 md:h-20 rounded-full object-cover shadow-md hover:scale-110 transition-transform duration-300"
+                  className="w-16 h-16 sm:w-4 sm:h-4 md:w-20 md:h-20 rounded-full object-cover shadow-md hover:scale-110 transition-transform duration-300"
                 />
               ))}
             </div>

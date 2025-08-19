@@ -17,7 +17,7 @@ const Footer = () => {
               largest education platform.
             </p>
           </div>
-          <div className="border-b border-gray-300 sm:border-none pb-6 sm:pb-0">
+          <div className="border-b border-gray-300 sm:border-none gap-15 pb-6 sm:pb-0 ">
             <h3 className="font-bold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#">Home</a></li>

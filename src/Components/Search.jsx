@@ -10,6 +10,9 @@ import image4 from "../assets/image4.jpg";
 import image5 from "../assets/image5.jpg";
 import image6 from "../assets/image6.jpg";
 import image7 from "../assets/image7.jpg";
+import image8 from "../assets/image8.jpg";
+import image10 from "../assets/image10.jpg";
+
 
 const SearchWithSlider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -32,7 +35,7 @@ const SearchWithSlider = () => {
     autoplaySpeed: 3000,
   };
 
-  const slides = [image1, image2, image3, image4, image5, image6, image7];
+  const slides = [image1, image2, image3, image4, image5, image6, image7, image8, image10];
 
   const handleSearch = () => {
     alert(`Searching for: ${searchTerm}`);
@@ -45,7 +48,7 @@ const SearchWithSlider = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto py-6">
+   <div className="w-full mx-auto pt-0 pb-4 -mt-10">
       <div className="z-10 mb-6">
         <div className="max-w-xl mx-auto">
           <div className="flex items-stretch gap-2 h-14">

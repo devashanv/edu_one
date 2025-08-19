@@ -10,7 +10,7 @@ const Navbar = () => {
         <span className="text-4xl font-semibold text-white">EduOne</span>
       </div>
 
-      <div className="hidden md:flex space-x-10">
+      <div className="hidden md:flex space-x-10 ">
         <Link to="/home" className="text-black hover:text-blue-600">
           Home
         </Link>
@@ -28,8 +28,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="hidden md:block">
-        <button className="flex items-center gap-2 px-4 py-2 border border-white bg-transparent text-white rounded-full hover:bg-blue-700 transition-colors">
+      <div className="hidden lg:block">
+        <button className="flex items-center gap-2 px-4 py-2 border-2 border-white bg-transparent text-white rounded-full hover:bg-blue-400 transition-colors">
           <span>Join Now</span>
           <span className="bg-white rounded-full p-1">
             <svg
@@ -126,7 +126,7 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          <button className="flex items-center gap-2 px-4 py-2 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-700 hover:text-white transition-colors">
+          <button className="flex items-center gap-2 px-4 py-2 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-400 hover:text-white transition-colors">
             <span>Join Now</span>
             <span className="bg-blue-600 rounded-full p-1">
               <svg
