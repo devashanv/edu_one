@@ -1,32 +1,25 @@
 import React from "react";
+import bsvg from "../assets/b.svg";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 font-sans">
-    
-      <h1 className="text-6xl text-blue-700 mb-4">
-        Unlock Your Potential with Future-Ready Learning
+    <div className=" mx-auto px-4 pt-10 pb-0 text-center">
+      <div className="rounded-2xl px-4 py-2 inline-block">
+        <h3 className="flex items-center justify-center text-sky-600 text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-lg">
+          <img src={bsvg} alt="icon" className="w-5 h-5 mr-2" />
+          Sri Lanka's #1 Online Education Platform
+        </h3>
+      </div>
+
+      <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-6xl xl:text-7xl text-sky-600 mb-3 leading-tight mt-4">
+        Unlock Your Potential with Future Ready Learning
       </h1>
-      
-   
-      <p className="text-lg text-gray-600 mb-8">
-        Learn, grow, and succeed with expert-led courses and hands-on mentorship
-      </p>
-      
-    
-      <div className="border-t border-gray-200 mb-8"></div>
-      
-     
-      <div className="flex items-center bg-white rounded-lg shadow-sm border border-gray-300 p-2">
-        <div className="flex items-center bg-gray-100 rounded px-3 py-2 mr-2">
-          <span className="text-gray-500 font-medium mr-2">Q</span>
-          <span className="text-gray-500 italic">e.g. UX Designer</span>
+
+      <div className="text-center">
+        <div className="inline-block sm:text-6xl md:text-4xl lg:text-2xl xl:text-xl text-gray-600 sm:mb-4 lg:mb-16 md:pt-14 sm:pt-14 sm:max-w-2xl mx-auto px-6">
+          <p>Learn, grow, and succeed with expert-led courses</p>
+          <p className="text-center">and hands-on mentorship</p>
         </div>
-        <input 
-          type="text" 
-          placeholder="Search"
-          className="flex-grow px-4 py-2 focus:outline-none"
-        />
       </div>
     </div>
   );
