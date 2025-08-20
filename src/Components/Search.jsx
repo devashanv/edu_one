@@ -97,17 +97,19 @@ const SearchWithSlider = () => {
         </div>
       </div>
 
-      <Slider key={windowWidth} {...settings}>
-        {slides.map((img, index) => (
-          <div key={index} className="p-2">
-            <img
-              src={img}
-              alt={`Slide ${index}`}
-              className="w-full h-[300px] object-cover rounded-xl shadow-lg"
-            />
-          </div>
-        ))}
-      </Slider>
+      <div className="overflow-hidden p-1">
+        <Slider key={windowWidth} {...settings}>
+          {slides.map((img, index) => (
+            <div key={index} className="px-1">
+              <img
+                src={img}
+                alt={`Slide ${index}`}
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

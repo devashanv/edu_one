@@ -75,7 +75,7 @@ function Video() {
           <img
             src={Image}
             alt="Background"
-            className="absolute w-[180%] h-[180%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover z-0"
+            className="absolute w-[180%] h-[180%] left-1/2 top-1/2 object-cover z-0"
           />
           <video
             src={demoVideo}
