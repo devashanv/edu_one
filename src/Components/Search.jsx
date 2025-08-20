@@ -13,7 +13,7 @@ import image7 from "../assets/image7.jpg";
 import image8 from "../assets/image8.jpg";
 import image10 from "../assets/image10.jpg";
 
-const SearchWithSlider = () => {
+const Search = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -21,7 +21,7 @@ const SearchWithSlider = () => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  });
 
   const slidesToShow = windowWidth < 640 ? 1 : windowWidth < 1024 ? 3 : 5;
 
@@ -57,7 +57,8 @@ const SearchWithSlider = () => {
   };
 
   return (
-    <div className="w-full mx-auto pt-0 pb-4 -mt-10">
+   <div className="w-full mx-auto px-4 sm:px-6 lg:px-12 pt-4 pb-8">
+
       <div className="z-10 mb-6">
         <div className="max-w-xl mx-auto">
           <div className="flex items-stretch gap-2 h-14">
@@ -114,4 +115,4 @@ const SearchWithSlider = () => {
   );
 };
 
-export default SearchWithSlider;
+export default Search;

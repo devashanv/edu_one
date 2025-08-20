@@ -5,12 +5,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-10/12 mx-auto px-8 py-6 flex justify-between items-center">
-      <div className="flex items-center">
+    <nav className="w-full max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+  
+      <div>
         <span className="text-4xl font-semibold text-white">EduOne</span>
       </div>
 
-      <div className="hidden md:flex space-x-10 ">
+   
+      <div className="hidden md:flex space-x-10">
         <Link to="/home" className="text-black hover:text-blue-600">
           Home
         </Link>
@@ -28,6 +30,7 @@ const Navbar = () => {
         </Link>
       </div>
 
+      
       <div className="hidden lg:block">
         <button className="flex items-center gap-2 px-4 py-2 border-2 border-white bg-transparent text-white rounded-full hover:bg-blue-400 transition-colors">
           <span>Join Now</span>
@@ -50,6 +53,7 @@ const Navbar = () => {
         </button>
       </div>
 
+    
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -89,6 +93,7 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Dropdown */}
       {isOpen && (
         <div className="absolute top-20 left-0 w-full bg-white shadow-lg flex flex-col items-center space-y-6 py-6 z-50 md:hidden">
           <Link
